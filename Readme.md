@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [сергей бутенко](https://up.htmlacademy.ru/javascript/17/user/50837).
-* Наставник: `Неизвестно`.
+* Наставник: `веселый молочник`.
 
 ---
 
