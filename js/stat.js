@@ -51,13 +51,10 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillText(time.toFixed(), STEP * i + HEIGHT, STEP + HEIGHT - height - 10);
     ctx.fillText(name, STEP * i + HEIGHT, STEP + HEIGHT + FONT_GAP);
 
-
-    var otherColor = 'rgba(0, 0, 255,' + Math.random().toFixed(1) +')';
-
-    var columnColor;
+    var otherColor = 'rgba(0, 0, 255,' + Math.random() + ')';
 
     if (name === 'Вы') {
-       columnColor = YOU_COLOR;
+      var columnColor = YOU_COLOR;
     } else {
       columnColor = otherColor;
     }
