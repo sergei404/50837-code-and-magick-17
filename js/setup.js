@@ -1,4 +1,4 @@
-'use strict';
+'use strct';
 
 var userDialog = document.querySelector('.setup');
 userDialog.classList.remove('hidden');
@@ -33,6 +33,7 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
   .content
   .querySelector('.setup-similar-item');
 
+
 function renderWizard(wiz) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
 
@@ -45,7 +46,7 @@ function renderWizard(wiz) {
 
 var fragment = document.createDocumentFragment();
 
-for (var j = 0; i < wizards.length; i++) {
+for (var j = 0; j < wizards.length; j++) {
   fragment.appendChild(renderWizard(wizards[j]));
 }
 similarListElement.appendChild(fragment);
