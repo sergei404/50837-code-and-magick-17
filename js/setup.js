@@ -1,4 +1,4 @@
-'use strct';
+'use strict';
 
 var userDialog = document.querySelector('.setup');
 userDialog.classList.remove('hidden');
@@ -9,15 +9,20 @@ var lastNames = ['да Марья', 'Верон', 'Мирабелла', 'Вал�
 var coatColors = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55', 'rgb(0, 0, 0)'];
 var eyesColors = ['black', 'red', 'blue', 'yellow', 'green'];
 
+var getRandomNumber = function (min, max) {
+  return min + Math.floor(Math.random() * (max + 1 - min));
+};
+
 function shuffle(arr) {
   for (var i = arr.length - 1; i > 0; i--) {
     var rand = Math.floor(Math.random() * (i + 1));
-    var temp = arr[rand];
-    arr[rand] = arr[i];
-    arr[i] = temp;
+    var temp = arr[i];
+    arr[i] = arr[rand];
+    arr[rand] = temp;
   }
   return arr;
 }
+
 
 
 for (var i = 0; i < wizardsLen; i++) {
@@ -52,3 +57,4 @@ for (var j = 0; j < wizards.length; j++) {
 similarListElement.appendChild(fragment);
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
+
