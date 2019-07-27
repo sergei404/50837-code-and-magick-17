@@ -2,6 +2,7 @@
 
 (function () {
 
+  // var form = window.setup.querySelector('.setup-wizard-form');s
   var userName = window.setup.querySelector('.setup-user-name');
   userName.addEventListener('invalid', function () {
     if (userName.validity.tooShort) {
@@ -23,6 +24,14 @@
       target.setCustomValidity('');
     }
   });
+
+  // form.addEventListener('submit', function (evt) {
+  //   window.upload(new FormData(form), function (response) {
+  //     console.log(response);
+  //     window.setup.classList.add('hidden');
+  //   });
+  //   evt.preventDefault();
+  // });
 
   window.userName = userName;
 
